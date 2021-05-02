@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.outer-box{
+  width: 96%;
+  border: 1px solid salmon;
+  margin: 20px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.innerBox{
+  width: 96%;
+  height: 60px;
+  margin: 10px auto;
+  border: 1px solid aqua;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+
+.pagination-block{
+  display: flex;
+  width: 30%;
+  margin: 20px auto;
+  border: 1px solid saddlebrown;
+  padding: 20px;
+}
+
+.btn{
+  width: 80px;
+  height: 40px;
+}
+
+li{
+  list-style: none;
+}
+
+.paging{
+  width: 50%;
+  margin: 40px auto;
+}
+
+.paginationContainer{
+  list-style: none;
+  width: 100%;
+  height: 40px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+.paginationContainer a{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.paginationContainer a:hover{
+  background-color: salmon;
+  
+}
+
+.activeNo a{
+  color: aliceblue;
+  background-color: salmon;
+}
+
+.inputField{
+  width: 200px;
+  float: right;
+  margin: 20px;
+}
+
+.inputField input{
+  width: 20px;
 }
